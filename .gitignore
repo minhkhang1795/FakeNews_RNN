@@ -1,0 +1,7 @@
+*.csv
+venv/*
+*.zip
+Sentiment_RNN_Solution.ipynb
+.ipynb_checkpoints/*
+*.pth
+data/*
