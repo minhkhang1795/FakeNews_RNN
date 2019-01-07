@@ -14,7 +14,7 @@ This project applies a recurrent neural network (RNN) together with long short t
 <img src="https://raw.githubusercontent.com/minhkhang1795/FakeNews_RNN/master/assets/network_diagram.png" width=50%>
 The recurrent neural network (RNN) together with long short term memory (LSTM).
 
-Image Credit: Intro to Deep Learning with PyTorch by Udacity.
+Image Credit: [Intro to Deep Learning with PyTorch by Udacity](https://in.udacity.com/course/deep-learning-pytorch--ud188).
 
 The layers are as follows:
 
@@ -23,7 +23,7 @@ The layers are as follows:
 3. A fully-connected output layer that maps the LSTM layer outputs to a desired output_size
 4. A sigmoid activation layer which turns all outputs into a value 0-1; return only the last sigmoid output as the output of this network.
 
-The data to train the neural network were obtained from the Fake News Competition on Kaggle. The dataset which contains 20,800 articles with 267,449 unique words is split into training (80%), validation (20%) and test (20%) sets. As there are approximately 267,449 words in our vocabulary, a word embedding layer is used as a lookup table. In the embedding layer, words are represented by dense vectors where each vector represents the projection of the word into a continuous vector space. The position of a word within the vector space is learned from the text and is based on other surrounding words. The position of a word in the learned vector space is referred to as its embedding.
+The data to train the neural network were obtained from the [Fake News Competition on Kaggle](https://www.kaggle.com/c/fake-news). The dataset which contains 20,800 articles with 267,449 unique words is split into training (80%), validation (20%) and test (20%) sets. As there are approximately 267,449 words in our vocabulary, a word embedding layer is used as a lookup table. In the embedding layer, words are represented by dense vectors where each vector represents the projection of the word into a continuous vector space. The position of a word within the vector space is learned from the text and is based on other surrounding words. The position of a word in the learned vector space is referred to as its embedding.
 
 ## Instructions
 To train the model, clone this project and open the Jupyter Notebook `FakeNews_RNN.ipynb`
@@ -41,9 +41,9 @@ The data can be obtained from the Fake News Competition on Kaggle, which can be 
     - 1: unreliable
     - 0: reliable
   
-- **test.csv**: A testing training dataset with all the same attributes at train.csv without the label.
+- **test.csv**: A testing training dataset with all the same attributes at **train.csv** without the label.
 
-The test set is for Kaggle submission. Therefore, we need to create our test set by splitting the training data into training (80%), validation (20%) and test (20%) sets, which is instructed in the Jupyter Notebook.
+The test set is for Kaggle submission. Therefore, we need to create our own test set by splitting the training data into training (80%), validation (20%) and test (20%) sets, which is instructed in the Jupyter Notebook.
 
 Some hyperparameters of the model we could change:
 ```python
